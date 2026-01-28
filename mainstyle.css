@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 80px;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #ff4444;
+}
+
+.header-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header-icons img {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+}
+
+.header-icons a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.background {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.background-content {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.background h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.background p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-weight: bold;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.games-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.game-card {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.game-card h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.game-card p {
+    padding: 0 1rem 1rem;
+    color: #888;
+}
+
+.game1-card {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px; /* Устанавливаем максимальную высоту карточки */
+}
+
+.game1-card:hover {
+    transform: translateY(-5px);
+}
+
+.game1-card img {
+    width: 100%; /* Картинка будет растягиваться по ширине карточки */
+    height: 250px; /* Увеличиваем высоту картинки */
+    object-fit: fill; /* Картинка будет обрезаться, чтобы заполнила пространство */
+}
+
+.game1-card h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.game1-card p {
+    padding: 0 1rem 1rem;
+    color: #888;
+}
+
+.price {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.game-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ff4444;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 0 1rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.game-link:hover {
+    background-color: #ff6666;
+}
+
+.monthly-offers h2 {
+    margin-bottom: 0rem;
+    padding-left: 5%; /* Адаптивный отступ */
+    text-align: center; /* Текст остаётся слева */
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    padding: 3rem 0;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: #ff4444;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.newsletter input {
+    padding: 0.8rem 1rem;
+    width: 250px;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: white;
+}
+
+.newsletter button {
+    padding: 0.8rem 1.5rem;
+    background-color: #ff4444;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #ff6666;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+main {
+    margin-top: 60px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        position: relative;
+    }
+
+    .header-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    .header-icons {
+        margin-top: 1rem;
+    }
+
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter input {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .game-card {
+        margin-bottom: 2rem;
+    }
+
+    .footer-container {
+        padding: 2rem 1rem;
+    }
+}
+
